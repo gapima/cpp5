@@ -6,7 +6,7 @@
 /*   By: glima <glima@student.42sp.org.br>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/10 21:23:51 by glima             #+#    #+#             */
-/*   Updated: 2026/03/10 21:34:01 by glima            ###   ########.fr       */
+/*   Updated: 2026/03/16 22:07:08 by glima            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class Bureaucrat
 		Bureaucrat();
 		Bureaucrat(const std::string &name, int grade);
 		Bureaucrat(const Bureaucrat &other);
+		Bureaucrat &operator=(const Bureaucrat &other);
 		~Bureaucrat();
 
 		const std::string	&getName() const;
